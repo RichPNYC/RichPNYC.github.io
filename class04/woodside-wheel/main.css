@@ -1,1 +1,62 @@
+h1 {
+    color: #e2231a
+}
+
+.date {
+    color: #cccccc;
+
+}
+
+footer {
+    color: #dddddd;
+}
+
+hr {
+    border-color: #dddddd;
+}
+
+.main-content {
+    max-width: 720px;
+    padding: 54px;
+    border-left-color: #e2231a;
+    border-left-style: solid;
+    border-width: 6px;
+}
+body {
+    margin: 0px 100px;
+    font-family: lato, sans-serif;
+    line-height: 1.5;
+}
+
+.navigation-links {
+    color: #dddddd;
+    margin: 0px 10px 0px 0px;
+}
+
+.navigation-links:hover {
+    color: black;
+}
+
+
+.links {
+    color: #e2231a;
+    text-decoration: none;
+}
+.links:hover {
+    color: black
+}
+
+.links-continues {
+    color: #e2231a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links-continues:hover {
+    color: black
+}
+
+.blog-posts {
+    padding: 15px 0px;
+}
 
