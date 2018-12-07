@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://pages.git.generalassemb.ly/mglumac/fewd-merge/notes/class03.html#/ -->
+<html lang="en" class=" js no-mobile desktop no-ie chrome chrome70 mglumac-section fewd-merge-section notes-section w-1440 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 lt-1680 lt-1920 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch no-retina fontface domloaded" id="class03-page"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>FEWD: Class 03</title>
+		<link rel="stylesheet" href="./FEWD_ Class 03_files/reveal.css">
+		<link rel="stylesheet" href="./FEWD_ Class 03_files/general-assembly.css" id="theme">
+		<link rel="shortcut icon" type="image/x-icon" href="https://pages.git.generalassemb.ly/mglumac/fewd-merge/notes/img/favicon.ico">
+		<link rel="stylesheet" href="./FEWD_ Class 03_files/zenburn.css">
+		<link rel="stylesheet" href="./FEWD_ Class 03_files/default.min.css">
+		<script src="./FEWD_ Class 03_files/highlight.min.js"></script><script type="text/javascript" src="./FEWD_ Class 03_files/highlight.js"></script>
+	</head>
+
+	<body>
+		<div class="reveal slide ready" role="application" data-transition-speed="default" data-background-transition="fade">
+			<div class="slides" style="width: 999px; height: 486.319px; zoom: 1.33333;">
+				<section class="hero present" style="display: block;">
+					<h1>HELLO</h1>
+					<div class="opening-instructions">
+						<p>1) Please download <a href="https://pages.git.generalassemb.ly/mglumac/fewd-merge/materials/class03.zip">Class 03 Starter Code</a></p>
+						<!-- <p>2) Move <code class="code">travel-bucket-list</code> into <code class="code">homework</code></p> -->
+					</div>
+				</section>
+
+				<section class="hero condensed future" hidden="" aria-hidden="true" style="display: block;">
+					<h1>Class <span class="red">#04</span></h1>
+					<h1>11/26/2018</h1>
+					<h1 class="lesson-title">Intermediate CSS</h1>
+				</section>
+
+				<!-- AGENDA -->
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: block;">
+					<div class="heading">Agenda</div>
+					<p>• <a href="https://pages.git.generalassemb.ly/mglumac/fewd-merge/notes/class03.html#/github">Git / Github</a></p>
+					<p>• <a href="https://pages.git.generalassemb.ly/mglumac/fewd-merge/notes/class03.html#/classes-ids">Classes and IDs</a></p>
+					<p>• <a href="https://pages.git.generalassemb.ly/mglumac/fewd-merge/notes/class03.html#/grouping-selectors">Grouping Selectors</a></p>
+					<!-- <p>&#149; <a href="#/nested-selectors">Nested Selectors</a></p> -->
+					<p>• <a href="https://pages.git.generalassemb.ly/mglumac/fewd-merge/notes/class03.html#/the-box-model">The Box Model</a></p>
+					<p>• <a href="https://pages.git.generalassemb.ly/mglumac/fewd-merge/notes/class03.html#/the-display-property">The Display Property</a>: <code class="code">block</code> vs. <code class="code">inline</code></p>
+					<p>• <a href="https://pages.git.generalassemb.ly/mglumac/fewd-merge/notes/class03.html#/span-div"><code class="code">&lt;span&gt;</code> and <code class="code">&lt;div&gt;</code></a></p>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">Announcements</div>
+					<p>• Student Services: studentservices@ga.co</p>
+					<p>• **ðŸ¢â±** Office Hours this week: Tuesday 6:30pm </p>
+				</section>
+
+<!-- 				<section class="title">
+					<h1>Questions</h1>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Questions</div>
+
+					<p class="text-smaller"><b>Q: When breaking up large groups of text, is it better to use the <code class="code">&lt;br&gt;</code> tag, or different <code class="code">&lt;p&gt;</code>'s?</b></p>
+					<p class="fragment text-smallest">A: <code class="code">&lt;p&gt;</code>'s are <a href="http://codepen.io/cheshireoctopus/pen/qrXypa?editors=1100#0" target="_blank">recommended</a>; leverage CSS for spacing</p>
+					<p class="fragment text-smaller"><b>Q: So I uploaded to Github now what? What do I do with the files after they are on GitHub? How do I put this stuff on a server?</b></p>
+					<p class="fragment text-smallest">A: Technically, it's already on GitHub's server :) - if you don't want to rely on GitHub, or you already have your own server, check out <a href="http://www.webopedia.com/TERM/F/ftp.html" target="_blank">FTP</a></p>
+				</section> -->
+
+
+				<section class="title has-light-background future" id="github" data-background="rgb(255, 216, 0)" hidden="" aria-hidden="true" style="display: none;">
+					<h1>Git Github</h1>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">GitHub: What is it?</div>
+
+					<div class="text-smaller">
+						<p>• <a href="https://github.com/" target="_blank">GitHub</a> is a version control platform</p>
+						<p class="fragment" data-fragment-index="0">• Like Dropbox, but for code</p>
+						<p class="fragment" data-fragment-index="1">• Stores a history of files and their changes</p>
+						<p class="fragment" data-fragment-index="2">• Hosts files in the cloud; easy to share finished product</p>
+						<div class="fragment" data-fragment-index="3">
+							<p>• Serves as a plaform for developer collaboration:</p>
+							<div class="pad-left-lg">
+								<p>&#8658; <a target="_blank" href="https://github.com/twbs/bootstrap">Twitter Bootstrap</a></p>
+								<p>&#8658; <a target="_blank" href="https://github.com/twbs/bootstrap/issues/3057">Makes for good drama</a></p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">GitHub: Why Do Developers Use It?</div>
+
+					<p>• Tracks changes: see who fixed (or broke) what</p>
+					<p class="fragment" data-fragment-index="0">• Stores history: can easily revert and fix mistakes</p>
+					<p class="fragment" data-fragment-index="1">• Allows for line-by-line feedback (useful for homework)</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">GitHub: Some Vocab</div>
+
+					<p>1. Repository</p>
+					<p>2. Clone</p>
+					<p>3. Commit</p>
+					<p>4. Push</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">GitHub: Repository (Repo)</div>
+
+					<p>• Basic element of GitHub</p>
+					<p class="fragment" data-fragment-index="0">• Contains all of a project's files (all the code)</p>
+					<p class="fragment" data-fragment-index="1">• One or more users can contribute to a single repository</p>
+					<p class="fragment" data-fragment-index="2">• Repositories are either public or private</p>
+					<p class="fragment" data-fragment-index="3">• By EOC, you will each create your own repo!</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">GitHub: Clone (Copy)</div>
+
+					<p>• Copies a <u>remote</u> repo to your machine</p>
+					<p>• This copy is called a <u>local</u> repo</p>
+					<p>• Changes to the <u>local</u> repo will not affect the <u>remote</u></p>
+					<p>• Multiple users can copy the same repo</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">GitHub: Commit</div>
+
+					<p>• A snapshot of changes to a repo</p>
+					<p>• Think of it as "saving" your <u>local</u> changes</p>
+					<p>• Commits do not change the original (remote) repo</p>
+					<p>• Contains a <a href="http://www.commitlogsfromlastnight.com/" target="_blank">message</a> describing the changes made</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">GitHub: Push (Send)</div>
+
+					<p>• Pushes (sends) commits to a <u>remote</u> repository</p>
+					<p>• Pushing does update the <u>remote</u> repo</p>
+					<p>• Allows other developers to see your changes</p>
+					<p>• Other developers can "pull" your changes</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">GitHub: How Will We Use It?</div>
+
+					<div class="text-smaller">
+						<p>• You will create your own repository to host:</p>
+						<div class="pad-left-lg">
+							<p>&#8658; Homework</p>
+							<p>&#8658; Class work</p>
+							<p>&#8658; Final projects</p>
+						</div>
+						<p>• Instructors will use your repo to grade homework</p>
+						<p>• Repo will serve as public portfolio</p>
+					</div>
+				</section>
+
+				<section class="hero future" hidden="" aria-hidden="true" style="display: none;">
+					<h1>Don't Worry</h1>
+					<h1>We Will Practice</h1>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">GitHub Checklist</div>
+
+					<div class="text-smaller">
+						<p>1) Create GitHub account</p>
+						<p>2) Download GitHub <a href="https://desktop.github.com/" target="_blank">desktop application</a></p>
+						<p>3) Create a new GitHub repo (see next slide)</p>
+						<p>4) Add files w/ code to this repo</p>
+						<p>5) Commit, sync, and push your changes to Github's servers</p>
+						<p>6) View your changes online</p>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub Desktop: Create A Repo</div>
+				
+					<p class="text-smaller">• In GitHub Desktop, click "Create New Repository"</p>
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/github-create-repo.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub Desktop: Create A Repo</div>
+				
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/github-repo-details.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">Repo Naming: Muy Importante</div>
+
+					<div class="text-smallest">
+						<div class="text-smallest">
+							<p>• Your repo's name needs to match the following format:</p>
+							<p class="pad-left-lg"><code class="code">YOUR_USERNAME.github.io</code></p>
+							<div class="fragment" data-fragment-index="0">
+								<p>• Ex 1:</p>
+								<div class="pad-left-lg">
+									<p><strong>Username: </strong> keanu-reeves</p>
+									<p><strong>Repo: </strong> <code class="code">keanu-reeves.github.io</code></p>
+								</div>
+							</div>
+							<div class="fragment" data-fragment-index="1">
+								<p>• Ex 2:</p>
+								<div class="pad-left-lg">
+									<p><strong>Username: </strong> patrick_swayze</p>
+									<p><strong>Repo: </strong> <code class="code">patrick_swayze.github.io</code></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub: Create A Repo</div>
+				
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/github-repo-details-filled.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub: Create A Repo</div>
+				
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/github-dashboard.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub: Create A Repo</div>
+				
+					<p class="text-smaller">• After publishing your repository, check GitHub.com</p>
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/github-web-dashboard.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub: Edit A Repo</div>
+				
+					<p>• Let's add code to our repos:</p>
+					<div class="text-smaller pad-left-lg">
+						<p>1) Open your repo in VS Code  (click and drag)</p>
+						<p>2) <code class="code">command</code> + <code class="code">n</code> to create a new file</p>
+						<p></p>
+						<p>3) <code class="code">command</code> + <code class="code">s</code> to save this file as <code class="code">index.html</code></p>
+						<p>4) Add the following: <code class="code">&lt;h1&gt;Hello, World!&lt;/h1&gt;</code></p>
+						<p>5) <code class="code">command</code> + <code class="code">s</code> to save</p>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub: Edit A Repo</div>
+				
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/github-history.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub: Edit A Repo</div>
+				
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/github-commit.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub: Edit A Repo</div>
+				
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/github-push.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub: Edit A Repo</div>
+				
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/github-web-repo.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+				  <div class="heading">GitHub: Next Steps</div>
+				
+					<p>• Open your GitHub URL in a browser window</p>
+					<p>• Make a few more changes to <code class="code">index.html</code></p>
+					<p>• Commit and Push these changes</p>
+					<p>• Repeat!</p>
+				</section>
+
+
+
+				<!-- CLASSES AND IDS -->
+				<section class="center future" hidden="" aria-hidden="true" style="top: 243.159px; display: none;">
+					<p>I have multiple <code class="code">&lt;p&gt;</code> tags.</p>
+					<p>How do I style each differently?</p>
+				</section>
+
+				<section class="title has-light-background future" id="classes-ids" data-background="rgb(255, 157, 182)" hidden="" aria-hidden="true" style="display: none;">
+					<h1>Classes and IDs</h1>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">Applying Element IDs</div>
+
+					<div class="text-smallest">
+						<p>• IDs are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">attributes</a> (options to specify element behavior)</p>
+						<p class="fragment" data-fragment-index="0">• Assigned to only <u>one</u> HTML element per page (app)</p>
+						<p class="fragment" data-fragment-index="1">• Identify the element for styling/scripting</p>
+						<div class="fragment" data-fragment-index="2">
+							<p>• Cannot contain spaces</p>
+<pre><code>
+	// DO NOT DO THIS
+	&lt;p id="important title"&gt;Hello, World!&lt;/p&gt;
+
+	// DO THIS
+	&lt;p id="important-title"&gt;Hello, World!&lt;/p&gt;
+
+</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">Targeting Element IDs</div>
+
+					<div class="text-smallest">
+					<p>• To style the following ID:</p>
+<pre><code>
+	&lt;p <span class="red">id="important-title"</span>&gt;Hello, World!&lt;/p&gt;
+
+</code></pre>
+					<div class="fragment" data-fragment-index="0">
+						<p>• Use <code class="code">#</code> + the IDs name:</p>
+<pre><code>
+	#important-title {
+	  color: red;
+	}
+
+</code></pre>
+					<p>
+						• <a target="_blank" href="https://codepen.io/glumac/pen/zobzMV?editors=1100">CodePen Exercise</a>
+					</p>
+					</div>
+				</div></section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">Applying Element Classes</div>
+
+					<div class="text-smaller">
+						<p>• Classes are also attributes</p>
+						<p class="fragment" data-fragment-index="0">• Assigned to <u>multiple</u> HTML elements per page</p>
+						<p class="fragment" data-fragment-index="1">• Identifies the elements for styling/scripting</p>
+						<div class="fragment" data-fragment-index="2">
+							<p>• Like the <code class="code">id</code> attribute, <code class="code">class</code> cannot contain spaces</p>
+<pre><code>
+	&lt;p class="hello"&gt;Hello, World!&lt;/p&gt;
+
+	&lt;p class="hello"&gt;Hello, Mars!&lt;/p&gt;
+
+	&lt;p class="hello"&gt;Hello, Jupiter!&lt;/p&gt;
+
+</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">Targeting Element Classes</div>
+
+					<div class="text-smallest">
+						<p>• To style the following classes:</p>
+<pre><code>
+	&lt;p class="hello"&gt;Hello, World!&lt;/p&gt;
+	&lt;p class="hello"&gt;Hello, Mars!&lt;/p&gt;
+
+</code></pre>
+						<div class="fragment" data-fragment-index="0">
+							<p>• Use <code class="code">.</code> + the class's name:</p>
+<pre><code>
+	.hello {
+	  color: pink;
+	}
+
+</code></pre>
+						</div>
+						<p class="fragment" data-fragment-index="1">• Add HTML classes to the previous <a target="_blank" href="https://codepen.io/glumac/pen/QGoMyJ?editors=1100#0">CodePen</a></p>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">IDs vs. Classes</div>
+
+					<div class="text-smaller">
+						<p>• General rule:</p>
+						<div class="pad-left-lg">
+							<p>&#8658; Use <code class="code">id</code> when you are styling <u>ONE</u> specific element</p>
+							<p>&#8658; Use a <code class="code">class</code> when you are styling a <u>GROUP</u> of elements</p>
+						</div>
+						<div class="fragment" data-fragment-index="0">
+							<p>• Note:</p>
+							<div class="pad-left-lg">
+								<p>&#8658; Elements cannot have more than one ID</p>
+								<p>&#8658; Elements can have multiple classes</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- GROUPING SELECTORS -->
+				<section class="title has-dark-background future" id="grouping-selectors" data-background="rgb(88, 88, 91)" hidden="" aria-hidden="true" style="display: none;">
+					<h1>Grouping Selectors</h1>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">Grouping Selectors</div>
+
+					<div class="text-smaller">
+						<p>Is there anything wrong with this CSS:</p>
+<pre><code>
+	h2 {
+	  color: red;
+	}
+
+	.some-class {
+	  color: red;
+	}
+
+	#some-title {
+	  color: red;
+	}
+
+</code></pre>
+						<p class="fragment" data-fragment-index="0">No - nothing is wrong! However, is anything being repeated?</p>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">Grouping Selectors</div>
+
+					<p>• Share CSS with multiple selectors</p>
+					<p>• Helps reduce repetitive code</p>
+					<div class="fragment" data-fragment-index="0">
+						<p>• Group selectors using a comma separator:</p>
+<pre><code>
+	h2, .some-class, #some-id {
+	    color: red;
+	}
+
+</code></pre>
+					</div>
+					<p class="fragment" data-fragment-index="1">• <a target="_blank" href="http://codepen.io/cheshireoctopus/pen/BoPZYz?editors=110">CodePen Exercise</a></p>
+				</section>
+
+				<!-- NESTING SELECTORS -->
+				<!-- <section class="title" id="nested-selectors">
+					<h1>Nested Selectors</h1>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Nested Selectors</div>
+
+					<div class="text-smallest">
+						<p>&#149; CSS selectors can contain more than one selector</p>
+						<p>&#149; More complicated selectors => targeted styles</p>
+						<div class="fragment">
+							<p>&#149; Child selector:</p>
+<pre><code>
+	#some-id p {
+	  color: red;
+	}
+
+</code></pre>
+						</div>
+						<p class="fragment">&#149; This will target <code class="code">&lt;p&gt;</code> tags inside of the element with <code class="code">id="some-id"</code></p>
+						<p class="fragment">&#149; <code class="code">&lt;p&gt;</code> tags outside of <code class="code">some-id</code> will <u>not</u> share this style</p>
+						<p class="fragment">&#149; <a href="http://codepen.io/cheshireoctopus/pen/ZpXrqW?editors=1100#0" target="_blank">Example</a></p>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Nested Selectors: Examples</div>
+
+					<div class="text-smallest">
+						<div class="fragment">
+<pre><code>
+	p a {
+	  color: black;
+	}
+
+</code></pre>
+						</div>
+						<div class="fragment">
+<pre><code>
+	#some-id p a {
+	  color: red;
+	}
+
+</code></pre>
+						</div>
+						<div class="fragment">
+<pre><code>
+	p .some-class, p #some-id {
+	  color: blue;
+	}
+
+</code></pre>
+						</div>
+						<p class="fragment">&#149; <a target="_blank" href="http://codepen.io/cheshireoctopus/pen/wKxemz?editors=110">CodePen Exercise</a></p>
+					</div>
+				</section> -->
+
+				<!-- THE BOX MODEL -->
+				<section class="title has-dark-background future" id="the-box-model" data-background="rgb(229,27,36)" hidden="" aria-hidden="true" style="display: none;">
+					<h1>The Box Model</h1>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">The Box Model</div>
+
+					<div class="text-smaller">
+						<p>• Every HTML element is a box</p>
+						<div class="fragment" data-fragment-index="0">
+							<p>• Each box is composed of:</p>
+							<div class="pad-left-lg">
+								<p>&#8658; <code class="code">content</code></p>
+								<p>&#8658; <code class="code">padding</code></p>
+								<p>&#8658; <code class="code">border</code></p>
+								<p>&#8658; <code class="code">margin</code></p>
+							</div>
+						</div>
+						<p class="fragment" data-fragment-index="1">• Awesome box model <a href="http://guyroutledge.github.io/box-model/" target="_blank">demo</a></p>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">The Box Model</div>
+
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/full-box-model.png">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">The Box Model: Content</div>
+
+					<p><u>Content</u>:</p>
+					<p class="pad-left-lg">&#8658; The text (and other elements) within the element's tags</p>
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/box-model-content.png">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">The Box Model: Padding</div>
+
+					<p><u>Padding</u>:</p>
+					<p class="pad-left-lg">&#8658; Space between the content and border</p>
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/box-model-padding.png">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">The Box Model: Border</div>
+
+					<p><u>Border</u>:</p>
+					<p class="pad-left-lg">&#8658; The border around the element</p>
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/box-model-border.png">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">The Box Model: Margin</div>
+
+					<p><u>Margin</u>:</p>
+					<p class="pad-left-lg">&#8658; Space between the border and other elements</p>
+					<div class="text-center">
+						<img src="./FEWD_ Class 03_files/box-model-margin.png">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">Box Model Codealong</div>
+
+					<p>1. Open a <a href="http://codepen.io/" target="_blank">CodePen</a></p>
+					<p>2. Create a <code class="code">&lt;div&gt;&lt;/div&gt;</code></p>
+					<p>3. Fill it with some content (hint: type "lorem" and hit <code class="code">tab</code>)</p>
+					<p>4. Apply a <code class="code">background</code> color to it</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">The Box Model: Borders</div>
+
+					<div class="text-smallest">
+						<p>• Borders consist of three properties:</p>
+						<div class="pad-left-lg text-smaller">
+							<p>&#8658; <code class="code">border-width</code>: a pixel-based value for width</p>
+							<p>&#8658; <code class="code">border-style</code>: the style (solid, dotted, dashed, double)</p>
+							<p>&#8658; <code class="code">border-color</code>: the color</p>
+						</div>
+						<div class="fragment" data-fragment-index="0">
+							<p>• Apply all three properties via shorthand technique:</p>
+<pre><code>
+	p {
+	  border: 2px solid black;
+	}
+
+</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">The Box Model: Padding</div>
+
+					<div class="text-smallest">
+						<div class="text-smllest">
+<pre><code>
+	// Method One: targets each side individually
+	p {
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  padding-right: 5px;
+	  padding-left: 5px;
+	}
+
+	// Method Two: starts at top, moves clockwise: right, bottom, left
+	p {
+	  padding: 5px 5px 5px 5px;
+	}
+
+	// Method Three: (top/bottom) (left/right)
+	p {
+	  padding: 5px 5px;
+	}
+
+	// Method Four: targets all four sides (top, right, bottom, left)
+	p {
+	  padding: 5px;
+	}
+
+</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">The Box Model: Margin</div>
+
+					<div class="text-smallest">
+						<p>• Margin follows the same syntax as <code class="code">padding</code>:</p>
+<pre><code>
+	p {
+	  margin-top: 5px;
+	  margin-bottom: 5px;
+	  margin-right: 5px;
+	  margin-left: 5px
+	}
+
+	p {
+	  margin: 5px 5px 5px 5px;
+	}
+
+	p {
+	  margin: 5px 5px;
+	}
+
+	p {
+	  margin: 5px;
+	}
+
+</code></pre>
+					</div>
+				</section>
+
+				<section class="center future" hidden="" aria-hidden="true" style="top: 243.159px; display: none;">
+					<h1>Box Model Exercise</h1>
+					<!-- <p><a target="_blank" href="http://codepen.io/cheshireoctopus/pen/wKxeZd?editors=110">CodePen</a></p> -->
+				</section>
+
+				<!-- BREAK (5-7 mins) -->
+				<section class="center future" hidden="" aria-hidden="true" style="top: 243.159px; display: none;">
+					<h1>5 minute break</h1>
+					<img src="./FEWD_ Class 03_files/break-time-bear.jpg">
+				</section>
+
+
+
+				<section class="center future" hidden="" aria-hidden="true" style="top: 243.159px; display: none;">
+					<img src="./FEWD_ Class 03_files/the-end.jpg">
+				</section>
+
+				<!-- ON DECK -->
+				<section data-background="#FFF" class="text-left has-light-background future" hidden="" aria-hidden="true" style="display: none;">
+					<div class="heading">On Deck: Class #05 - Introduction to Page Layout</div>
+
+					<p>• CSS Specificity</p>
+					<p>• Chrome Developer Tools</p>
+					<p>• Semantic HTML</p>
+				</section>
+
+				<section class="center future" hidden="" aria-hidden="true" style="top: 243.159px; display: none;">
+					<h1>Exit Tickets!</h1>
+				</section>
+			</div>
+		<div class="backgrounds"><div class="slide-background hero present" data-loaded="true" style="display: block;"></div><div class="slide-background hero condensed future" data-loaded="true" style="display: block;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" data-loaded="true" style="background: rgb(255, 255, 255); display: block;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background title future" data-background-hash="rgb(255, 216, 0)nullnullnullnullnullnullnullnull" style="background: rgb(255, 216, 0); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background hero future" style="display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background center future" style="display: none;"></div><div class="slide-background title future" data-background-hash="rgb(255, 157, 182)nullnullnullnullnullnullnullnull" style="background: rgb(255, 157, 182); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background title future" data-background-hash="rgb(88, 88, 91)nullnullnullnullnullnullnullnull" style="background: rgb(88, 88, 91); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background title future" data-background-hash="rgb(229,27,36)nullnullnullnullnullnullnullnull" style="background: rgb(229, 27, 36); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background center future" style="display: none;"></div><div class="slide-background center future" style="display: none;"></div><div class="slide-background center future" style="display: none;"></div><div class="slide-background text-left future" data-background-hash="#FFFnullnullnullnullnullnullnullnull" style="background: rgb(255, 255, 255); display: none;"></div><div class="slide-background center future" style="display: none;"></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left" aria-label="previous slide" disabled="disabled"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up" aria-label="above slide" disabled="disabled"></button><button class="navigate-down" aria-label="below slide" disabled="disabled"></button></aside><div class="slide-number" style="display: block;"><span class="slide-number-a">1</span><span class="slide-number-delimiter">/</span><span class="slide-number-b">53</span></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+					HELLO
+					
+						1) Please download Class 03 Starter Code
+						
+					
+				</div></div>
+
+		<script src="./FEWD_ Class 03_files/head.min.js"></script>
+		<script src="./FEWD_ Class 03_files/reveal.min.js"></script>
+		<script src="./FEWD_ Class 03_files/main.js"></script>
+	
+
+</body></html>

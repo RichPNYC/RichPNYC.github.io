@@ -1,0 +1,163 @@
+/* FONT FAMILY HELPERS :)
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+
+body {
+    max-width: 1080px;
+    font-family: "source sans pro", sans-serif;
+    display: flex; 
+    flex-direction: column;
+}
+
+.top-bar {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.logo {
+    color: yellow;
+    font-family: "merriweather", serif;
+    margin: 20px 0;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 20px;
+
+}
+
+hr {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 75px;
+    background-color: black;
+}
+
+.copyright {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 30px;
+}
+
+.tagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    font-size: 26px;
+    background: #c6c6c6;
+}
+
+.taste {
+    text-decoration: line-through;
+    color: rgb(153, 153, 153)
+}
+
+.are {
+    display: inline-block;
+    border-bottom: 3px solid yellow;
+
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../img/coworking.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-description {
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.80);
+    margin: 30px;
+    padding: 35px;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.35);
+}
+
+.hero-description-title {
+    font-size: 28px;
+    font-weight: bolder;
+    font-weight: 900;
+    margin: 0;
+}
+.hero-description-content {
+    line-height: 1.6;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.hero-button {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: "oswald", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-shadow: 0px 3px rgb(204, 203, 54);
+}
+
+
+.profile-developer-designer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.profile, .developer, .designer {
+    width: 360px;
+    background-color: rgb(238, 238, 238);
+    padding: 20px
+}
+
+.profile, .developer {
+    border-right: 1px solid #c6c6c6;
+    /* I added "height: Xpx and height: 90%" here, but the height didn't respond */
+}
+
+.profile-developer-designer-button {
+    background-color:#c6c6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    font-family: "oswald", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    margin: 25px 0px 25px 0px;
+    box-shadow: 0px 3px rgb(158, 158, 158);
+}
+
+.profile-developer-designer-title {
+    font-size: 25px;
+    font-family: "merriweather", serif;
+    margin-bottom: 0px;
+}
+
+.profile-developer-designer-content {
+    line-height: 1.6;
+    font-size: 20px;
+    margin-top: 0px;
+    
+}
