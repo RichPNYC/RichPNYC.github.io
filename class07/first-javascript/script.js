@@ -22,5 +22,5 @@ let hello = document.querySelector('h1');
 
 console.log(hello);
 
-hello.style.color = 'blue';
-hello.innerHTML = 'Hallo World emoji'
+// hello.style.color = 'blue';
+// hello.innerHTML = 'Hallo World emoji'
