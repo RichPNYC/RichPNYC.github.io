@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+	<h1>Temperature Converter</h1>
+	<br>
+	 <!--<div class="page-selection">
+		<select id="conversion-instruction">
+			<option id="one">Select Conversion Instruction</option>
+			<option id="two">Fahrenheit to Celcius (&#176F -> &#176C)</option>
+			<option id="three">Celcius to Fahrenheit (&#176C -> &#176F)</option>
+		</select>-->
+	</div> */	
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+<div class="F-and-C">
+	<div class="F-to-C">
+		<div class="enter-fahrenheit">
+			<h2>Enter Temperature: </h2>
+			<input id="input-fahrenheit"> <h2>&#176F</h2>
+		</div>
+		<br>
+		<br>
+		<br>
+		<button id="convert-fahrenheit">Convert</button>
+		<br>
+		<br>
+		<br>
+		<div class="converted-fahrenheit">
+			<h2>Converted Temperature: </h2> 
+			<h2><span id="output-converted-fahrenheit"></span>&#176C</h2>
+		</div>
+	</div>
+
+
+	<div class="C-to-F">
+		<div class="enter-celcius">
+			<h2>Enter Temperature: </h2>
+			<input id="input-celcius"> <h2>&#176C</h2>
+		</div>
+		<br>
+		<br>
+		<br>
+		<button id="convert-celcius">Convert</button>
+		<br>
+		<br>
+		<br>
+		<div class="converted-celcius">
+			<h2>Converted Temperature: </h2> 
+			<h2><span id="output-converted-celcius"></span>&#176F</h2>
+		</div>
+	</div>
+</div>
+
+<div class="cartoons">
+	<div class="hot">
+		<img src="sun.png" alt="sun" width="425">
+	</div>
+	<div class="cold">
+		<img src="penguin.png" alt="penguin" width="250">
+	</div>
+</div>
+
+	<span id="C-to-F"></span>
+
+	<!-- ADD A SCRIPT TAG AND POINT IT TO JQUERY CDN! -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+</body>
+</html>

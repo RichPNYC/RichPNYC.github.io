@@ -1,0 +1,30 @@
+h1, .page-selection {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px; 
+}
+
+.enter-fahrenheit, .converted-fahrenheit {
+    display: flex;
+}
+
+
+#conversion-instruction, #convert-fahrenheit, #convert-celcius {
+    font-size: 32px;
+}
+
+.enter-celcius, .converted-celcius {
+    display: flex;
+}
+
+.F-and-C {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartoons {
+    display: flex;
+    justify-content: center;
+}
