@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Pacifico', cursive;
+}
+
+
+.videoContainer {
+	width: 100%;
+	position: relative;
+}
+
+video {
+	width: 100%;
+}
+
+.overlayText {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: red;
+	background-color:rgba(0, 0, 255, 0.3);;
+	top: 0; bottom: 0; right: 0; left: 0;
+}

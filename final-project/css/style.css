@@ -1,31 +1,72 @@
+body {
+    background: blue;
+}
+.sg {
+    display: flex;
+    justify-content: center; 
+}
 
-h1 {
-    text-align: center;
+.sg1 {
+    font-size: 100px;
+    color: white;
+    background-color: rgb(237, 29, 36);
+    font-family: "bebas-neue";
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid white;
+}
+
+.reset {
     font-size: 50px;
+    color: white;
+    background-color: rgb(237, 29, 36);
+    font-family: "bebas-neue";
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 135px;
+    border: 2px solid white;
 }
 
 h3 {
     text-align: center;
+    font-family: "comic sans ms";
+    font-size: 25px;
 }
 
-.snap  {
+.options  {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.characters-wrap {
+    min-height: 510px;
 }
 
 .characters  {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .powers {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
 }
 
 .stick {
     transform: rotate(280deg);
+}
+
+.superheroes {
+    display: none;
 }
 

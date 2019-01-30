@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Superhero Creator</title>
-
+	<link rel="stylesheet" href="https://use.typekit.net/pco2tzw.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="screen and (max-width: 768px)" href="css/768px.css">
 </head>
+
 <body>
-	<h1>Superhero Creator</h1>
-
-	<div class ="snap">
-	<img src="images/gauntlet.png" width="25%" height="25%" alt="gauntlet">
+	<div class="sg">
+		<div class="sg1">SUPERHERO GENERATOR</div>
 	</div>
 
-	<div class = "characters">
-		<div class = "regularperson">
-			<img src="images/regularperson.png" width="150" alt="regularperson">
+	<div class="options">
+		<div class="reset">Start Over</div>
+		<div class="gauntlet">
+			<img src="images/gauntlet.png" width="400px" height="300px" alt="gauntlet">
 		</div>
-
-		<div class = "captainamerica">
-			<img src="images/captainamerica.png" width="330" alt="captainamerica">
-		</div>
-
-		<div class = "ironman">
-			<img src="images/ironman.png" alt="ironman">
-		</div>
-
-		<div class = "thor">
-			<img src="images/thor.png" width="450"  alt="thor">
-		</div>
-
-		<div class = "hulk">
-			<img src="images/hulk.png" width="400" alt="hulk">
-		</div>
-
-		<div class = "spiderman">
-			<img src="images/spiderman.png" alt="spiderman">
-		</div>
-
-		<div class = "wolverine">
-			<img src="images/wolverine.png" alt="wolverine">
-		</div>	
 	</div>
 
-	<div class = "powers">
-		<div class = "serum">
+	<div class="characters-wrap">
+		<div class="characters">
+			<div class="regularperson">
+				<img src="images/regularperson.png" width="150" alt="regularperson">
+			</div>
+
+			<div class="captainamerica superheroes">
+				<img src="images/captainamerica.png" width="330" alt="captainamerica">
+			</div>
+
+			<div class="ironman superheroes">
+				<img src="images/ironman.png" alt="ironman">
+			</div>
+
+			<div class="thor superheroes">
+				<img src="images/thor.png" width="450" alt="thor">
+			</div>
+
+			<div class="hulk superheroes">
+				<img src="images/hulk.png" width="400" alt="hulk">
+			</div>
+
+			<div class="spiderman superheroes">
+				<img src="images/spiderman.png" alt="spiderman">
+			</div>
+
+			<div class="wolverine superheroes">
+				<img src="images/wolverine.png" alt="wolverine">
+			</div>
+		</div>
+	</div>
+
+	<div class="powers">
+		<div class="droppable-power serum">
 			<img src="images/serum.png" width="150" alt="serum">
 		</div>
 
-		<div class = "arcreactor">
+		<div class="droppable-power arcreactor">
 			<img src="images/arcreactor.png" width="150" alt="arcreactor">
 		</div>
 
-		<div class = "stick">
+		<div class="droppable-power stick">
 			<img src="images/stick.png" width="225" alt="stick">
 		</div>
 
-		<div class = "gamma">
+		<div class="droppable-power gamma">
 			<img src="images/gamma.png" width="200" alt="gamma">
 		</div>
 
-		<div class = "spider">
+		<div class="droppable-power spider">
 			<img src="images/spider.png" width="75" alt="spider">
 		</div>
 
-		<div class = "dna">
+		<div class="droppable-power dna">
 			<img src="images/dna.png" width="200" alt="dna">
 		</div>
 	</div>
-	<h3>Drag an icon to the character</h3>
+	<h3>Drag an object to the character</h3>
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/project.js"></script>
 </body>
+
 </html>
