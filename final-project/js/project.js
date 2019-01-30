@@ -5,7 +5,7 @@ $('.reset').click(function () {
 })
 
 $('.gauntlet').click(function () {
-    $('.characters').fadeToggle(1500);
+    $('.characters').fadeToggle(1510);
 })
 
 // $(function(){
