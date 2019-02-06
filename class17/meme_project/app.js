@@ -1,12 +1,28 @@
 $('.meme-form').submit(findMeme);
 
-function findMeme (){
+function findMeme() {
   event.preventDefault();
   let meme = $('.meme-input').val();
   console.log(meme)
 }
 
+var xhr = $.get(
+  "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=CUnrBHUcuMrWbJmb8sVZnll1SnM7CXWm&limit=5");
+xhr.done(function (data) {
+  // console.log("success got data", data); 
+  // console.log(data.data)
+  let memes = data.data;
+  //console.log(memes);
+  //console.log(memes[0].url);
+  //console.log(memes.url);
 
+  memes.forEach(function (element, index) {
+    console.log(element);
+    console.log(`${element.images.looping.mp4}`);
+    $('.meme-list').append(`<li><video src=' ${element.images.looping.mp4} ' type="video/mp4" autoplay></video></li>`)
+  })
+
+  });
 
 // Create a submit handler for the meme form
 

@@ -14,7 +14,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     border: 2px solid white;
 }
 
@@ -25,21 +25,28 @@ body {
     font-family: "bebas-neue";
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 135px;
     border: 2px solid white;
 }
 
-h3 {
+.clicksnap {
     text-align: center;
     font-family: "comic sans ms";
     font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 75px;
+}
+
+.drag {
+    text-align: center;
+    font-family: "comic sans ms";
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .options  {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -52,14 +59,14 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .powers {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .stick {
