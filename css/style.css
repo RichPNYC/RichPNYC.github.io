@@ -1,0 +1,79 @@
+body {
+    background: blue;
+}
+.sg {
+    display: flex;
+    justify-content: center; 
+}
+
+.sg1 {
+    font-size: 100px;
+    color: white;
+    background-color: rgb(237, 29, 36);
+    font-family: "bebas-neue";
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+.reset {
+    font-size: 50px;
+    color: white;
+    background-color: rgb(237, 29, 36);
+    font-family: "bebas-neue";
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid white;
+}
+
+.clicksnap {
+    text-align: center;
+    font-family: "comic sans ms";
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 75px;
+}
+
+.drag {
+    text-align: center;
+    font-family: "comic sans ms";
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.options  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters-wrap {
+    min-height: 510px;
+}
+
+.characters  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.powers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stick {
+    transform: rotate(280deg);
+}
+
+.superheroes {
+    display: none;
+}
+
